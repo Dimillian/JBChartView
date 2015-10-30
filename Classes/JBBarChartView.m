@@ -11,7 +11,7 @@
 // Numerics
 CGFloat static const kJBBarChartViewBarBasePaddingMutliplier = 50.0f;
 CGFloat static const kJBBarChartViewUndefinedCachedHeight = -1.0f;
-CGFloat static const kJBBarChartViewStateAnimationDuration = 0.30f;
+CGFloat static const kJBBarChartViewStateAnimationDuration = 0.20f;
 CGFloat static const kJBBarChartViewStatePopOffset = 5.0f;
 NSInteger static const kJBBarChartViewUndefinedBarIndex = -1;
 
@@ -398,7 +398,7 @@ static UIColor *kJBBarChartViewDefaultBarColor = nil;
             for (UIView *barView in self.barViews)
             {
                 [UIView animateWithDuration:kJBBarChartViewStateAnimationDuration delay:(kJBBarChartViewStateAnimationDuration * 0.5) * index options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-                    updateBarView(barView, YES);
+                    updateBarView(barView, NO);
                 } completion:^(BOOL finished) {
                     [UIView animateWithDuration:kJBBarChartViewStateAnimationDuration delay:0.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
                         updateBarView(barView, NO);

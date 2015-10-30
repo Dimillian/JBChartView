@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JBChartView"
-  s.version      = "2.8.17"
+  s.version      = "2.8.19"
   s.summary      = "Jawbone's iOS-based charting library for both line and bar graphs."
   s.homepage     = "https://github.com/Jawbone/JBChartView"
 
